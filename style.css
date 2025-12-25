@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #446300;
+    background: linear-gradient(90deg, rgba(68, 99, 0, 1) 20%, rgba(9, 9, 121, 1) 53%, rgba(85, 0, 255, 1) 95%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+
+    width: 9rem;
+    height: 12rem;
+    overflow: hidden;
+    display: grid;
+    align-items: end;
+    border-radius: 0 0 100vw 100vw;
+    transform: scale(.8);
+    transition: .5s ease-in-out;
+}
+
+
+.circle {
+    width: 9rem;
+    aspect-ratio: 1;
+    background: linear-gradient(lightblue,
+            seagreen);
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    transform: scale(.9);
+    transition: .5s ease-in-out;
+
+
+}
+
+.image-container:hover {
+    transform: scale(1);
+}
+
+.image-container:hover .circle img {
+    transform: translateY(-3rem) scale(1);
+}
