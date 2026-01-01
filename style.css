@@ -6,7 +6,7 @@
 
 body {
     background: #446300;
-    background: linear-gradient(90deg, rgba(68, 99, 0, 1) 20%, rgba(9, 9, 121, 1) 53%, rgba(85, 0, 255, 1) 95%);
+    background: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,4 +51,23 @@ body {
 
 .image-container:hover .circle img {
     transform: translateY(-3rem) scale(1);
+}
+
+#cursor {
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: fixed;
+
+}
+
+#cursor-grow {
+    background: #DCFF2F;
+    width: 300px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(100px);
+    z-index: -1;
+
 }
